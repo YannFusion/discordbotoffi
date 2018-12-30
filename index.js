@@ -1,11 +1,12 @@
 const Discord = require("discord.js");
-const cfg require('./index.json'); // a garder en version desktop
-const token = process.env.token // a garder en version heroku
+
 const client = new Discord.Client();
 
 var prefix = "$";
 
 client.login("NTI2MzI1Nzc4NDY0NjM2OTM5.DwDiuw.zT8yxk6QH2E7SRJ-oSRS0FBm-0Y");
+
+const token = process.env.token // a garder en version heroku
 
 client.on("ready" , () => {
     console.log("Paré à décoller")
@@ -90,5 +91,3 @@ client.on('message', message =>
 }
 
     });
-
-bot.login(fusionbottoken); //a garder en version heroku
